@@ -1,6 +1,6 @@
 h1 {
    border-bottom: 2px solid pink;
-    background-image: url("js/data/header.png");
+    background-image: url("/js/data/header.png");
      text-align: center;
      font-family: 'Trebuchet MS';
      font-size: 80px;
