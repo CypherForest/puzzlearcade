@@ -1,0 +1,54 @@
+h1 {
+   border-bottom: 2px solid pink;
+    background-image: url("C:/VisCodeData/darkweb/js/data/header.png");
+     text-align: center;
+     font-family: 'Trebuchet MS';
+     font-size: 80px;
+     color: orchid;
+     text-shadow: 0 0 20px crimson;
+     display: block;
+     margin: 2px;
+     padding-bottom: 15px;
+            }
+         
+ 
+ h2 {
+   border-bottom: 2px pink;
+   text-shadow: 0 0 10px black;
+   text-align: center;   
+  /* background-color:rgb(40, 246, 178);*/
+    font-size: 30px;
+    color: aqua;
+    display: block;
+    margin: 2px;
+ }
+ 
+ canvas {
+    border: 3px double pink;
+    padding: 0;
+    margin: auto;
+    display: block;
+   
+ }
+ 
+ iframe {
+    border: 3px double pink;
+    margin: 20px;
+    display: inline;
+ }
+ 
+ #puzzle {
+    border: 0px double rgb(47, 2, 245);
+    text-align: center;
+    margin-bottom:100px;
+    margin: auto;
+    display: block;
+  }
+ 
+ 
+ #main {
+   border: 5px  double magenta;
+    background: linear-gradient(#030338, #cb9af8);
+    margin: 0px;
+ 
+ }
