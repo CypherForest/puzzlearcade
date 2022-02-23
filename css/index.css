@@ -22,6 +22,10 @@ h1 {
     display: block;
     margin: 2px;
  }
+
+img {
+ border: solid pink;  
+}
  
  canvas {
     border: 3px double pink;
