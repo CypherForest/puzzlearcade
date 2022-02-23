@@ -24,7 +24,7 @@ h1 {
  }
 
 img {
- border: solid pink;  
+ border: 3px double pink;  
 }
  
  canvas {
