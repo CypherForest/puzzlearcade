@@ -147,6 +147,144 @@ void keyPressed() {
             <input type="button" value="Enter Encrypted Area" onClick="passWord()">
             </FORM>
             </CENTER>
+             
+              <script type="text/processing">
+float ax;
+float ay;
+float bx;
+float by;
+int boxASize = 50;
+int boxBSize = 50;
+boolean overAbox = false;
+boolean overBbox = false;
+boolean lockedA = false;
+boolean lockedB = false;
+float axOffset = 0.0; 
+float ayOffset = 0.0; 
+float bxOffset = 0.0; 
+float byOffset = 0.0; 
+PImage bluebox;
+PImage voicemail;
+PImage phreakbground;
+
+void setup() {
+
+bluebox = loadImage("js/data/bluebox.png");
+voicemail = loadImage("js/data/voicemail.png");
+bground = loadImage("js/data/phreakbground.png");
+  size(600,600);
+  ax = 200;
+  ay = random(height);
+  bx = 400;
+  by = random(height);
+  rectMode(RADIUS);  
+}
+
+void draw() { 
+  background(0);
+  imageMode(CORNER);
+  image(phreakbground,0,0);
+  
+  // Test if the cursor is over the box 
+  if (mouseX > bx-boxBSize && mouseX < bx+boxBSize && 
+      mouseY > by-boxBSize && mouseY < by+boxBSize) {
+    overBbox = true;  
+    if(!lockedB) { 
+      stroke(255); 
+      fill(153);
+    } 
+  } else {
+    stroke(153);
+    fill(153);
+    overBbox = false;
+  }
+  
+    if (mouseX > ax-boxASize && mouseX < ax+boxASize && 
+      mouseY > ay-boxASize && mouseY < ay+boxASize) {
+    overAbox = true;  
+    if(!lockedA) { 
+      stroke(255); 
+      fill(153);
+    } 
+  } else {
+    stroke(153);
+    fill(153);
+    overAbox = false;
+  }
+  
+  // Draw the box
+  imageMode(CENTER);
+  image(bluebox,bx, by);
+  image(voicemail, ax, ay);
+}
+
+void mousePressed() {
+  if(overBbox) { 
+    lockedB = true; 
+    fill(255, 255, 255);
+  } else {
+    lockedB = false;
+  }
+  bxOffset = mouseX-bx; 
+  byOffset = mouseY-by; 
+  
+   if(overAbox) { 
+    lockedA = true; 
+    fill(255, 255, 255);
+  } else {
+    lockedA = false;
+  }
+  axOffset = mouseX-ax; 
+  ayOffset = mouseY-ay; 
+
+}
+
+void mouseDragged() {
+  if(lockedB) {
+    bx = mouseX-bxOffset; 
+    by = mouseY-byOffset; 
+ 
+  }
+    if(lockedA) {
+    ax = mouseX-axOffset; 
+    ay = mouseY-ayOffset; 
+ 
+  }
+}
+
+void mouseReleased() {
+  lockedA = false;
+  lockedB = false;
+ 
+}
+        </script>
+        <canvas id="sketch">yo</canvas>
+        <SCRIPT>
+          function passWord() {
+            var testV = 1;
+            var pass1 = prompt('____ Hz',' ');
+              while (testV < 3) {
+              if (!pass1)
+                 history.go(-1);
+              if (pass1.toLowerCase() == "2600") {
+                  /* alert('You Got it Right!');*/
+                  window.open('darksolve.html');
+              break;
+            }
+            testV+=1;
+            var pass1 =
+            prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+            }
+              if (pass1.toLowerCase()!="password" & testV ==3)
+                history.go(-1);
+              return " ";
+            }
+            </SCRIPT>
+            <CENTER>
+            <FORM>
+            <input type="button" value="Tune Your Box!" onClick="passWord()">
+            </FORM>
+            </CENTER>
 
           </p>
 </div>
