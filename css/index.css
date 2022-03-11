@@ -68,11 +68,7 @@ img {
    
  }
  
- iframe {
-    border: 3px double pink;
-    margin: 0px;
-    display: inline;
- }
+
 
 #solution {
    text-align: center;
@@ -157,6 +153,4 @@ text-align: left;
 
  }
 
- #sketch {
-    border: solid hotpink;
- }
+
