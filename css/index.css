@@ -141,31 +141,9 @@ height: 640px;
      background-color: rgb(75, 75, 75);
 
  background-image: url("/Users/daryooshardalan/vscode/puzzlearcade-main/data/testbackground.jpeg");*/
- background: linear-gradient(180deg,black, #000605, black, rgb(207, 3, 207));
-   background-size: 400% 400%;
-
-   -webkit-animation: AnimationName 60s ease infinite;
-   -moz-animation: AnimationName 60s ease infinite;
-   animation: AnimationName 60s ease infinite;
+ background: linear-gradient(180deg,black, black, magenta);
+  
  }
-
-
-
-@-webkit-keyframes AnimationName {
-   0%{background-position:47% 0%}
-   50%{background-position:54% 100%}
-   100%{background-position:47% 0%}
-}
-@-moz-keyframes AnimationName {
-   0%{background-position:47% 0%}
-   50%{background-position:54% 100%}
-   100%{background-position:47% 0%}
-}
-@keyframes AnimationName {
-   0%{background-position:47% 0%}
-   50%{background-position:54% 100%}
-   100%{background-position:47% 0%}
-}
 
 
 
