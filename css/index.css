@@ -141,7 +141,7 @@ height: 640px;
      background-color: rgb(75, 75, 75);
 
  background-image: url("/Users/daryooshardalan/vscode/puzzlearcade-main/data/testbackground.jpeg");*/
- background: linear-gradient(180deg,black, black, magenta);
+ background: linear-gradient(180deg,black, black, magenta) no-repeat fixed;
   
  }
 
