@@ -57,7 +57,7 @@ for (let pie of pies) {
         }
     }
 
-    if(answerCounter >= 12) {
+    if(answerCounter >= 13) {
         //You win the game
         digits = "You Rule!!!"; 
         answerCounter = 0;
