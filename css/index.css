@@ -68,7 +68,18 @@ img {
    
  }
  
+#sketch-container {
+   border: solid hotpink;
+   margin: auto;
+   text-align: center;
+   width: 400px;
+   height: 400px;
+   }
 
+#digits {
+      width:600px;
+      text-align: center;
+}
 
 #solution {
    text-align: center;
