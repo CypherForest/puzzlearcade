@@ -57,9 +57,9 @@ for (let pie of pies) {
         }
     }
 
-    if(answerCounter >= 6) {
+    if(answerCounter >= 12) {
         //You win the game
-        digits = "All your base belong to us"; 
+        digits = "You Rule!!!"; 
         answerCounter = 0;
         wrongCounter = 0;   
     }
