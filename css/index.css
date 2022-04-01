@@ -40,9 +40,14 @@ img {
  border: 3px double pink;  
 }
  
+html {
+   overflow-x: hidden;
+ }
 
-
-
+body {
+    overflow-x: hidden;
+    width: 100%;
+ }
 
  #row{
     border-bottom: solid black;
