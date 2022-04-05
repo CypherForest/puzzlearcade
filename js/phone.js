@@ -27,7 +27,7 @@ function setup() {
     background(200);
 
     text("CLICK HERE TO PROCEED", 230, 20)
-    image(img, width / 2, height / 2);
+    phoneState0();
 
 }
 
