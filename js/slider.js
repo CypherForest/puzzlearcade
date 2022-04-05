@@ -5,7 +5,7 @@ let sound;
 var lettersXSpeed = .033;
 function setup() {
   //  sound = loadSound('slider/data/boing.m4a');
-    let canvas = createCanvas(400, 400);
+    let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
 
 
@@ -13,10 +13,10 @@ function setup() {
     // slider.position(500, 250);
     // slider.style('width', '180px');
     // slider.style('text-align', 'center');
-    for (var i = 0; i < 120; i++) {
+    for (var i = 0; i < 160; i++) {
         stars[i] = new Star();
     }
-    for (var j = 0; j < 10; j++) {
+    for (var j = 0; j < 16; j++) {
         letters[j] = new LettersA();
     }
     
