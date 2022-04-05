@@ -24,7 +24,7 @@ function setup() {
 
     let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
-    img = loadImage("js/businessphone.png");
+    img = loadImage("js/data/businessphone.png");
     beep0 = loadSound('js/data/PhoneTones/Phone0.m4a')
     beep1 = loadSound('js/data/PhoneTones/Phone1.m4a')
     beep2 = loadSound('js/data/PhoneTones/Phone2.m4a')
