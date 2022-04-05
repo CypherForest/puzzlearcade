@@ -7,18 +7,7 @@ let clicked5 = false;
 let clicked6 = false;
 let beep0, beep1, beep2, beep3, beep4, beep5, beep6, beep7, beep8, beep9;
 
-function phoneState0() {
-    background(0);
-    image(img, 0, 0);
-    let s = "Welcome! Navigate the phone network to reach the CEO. Don't get caught by security! Dial 0 to hang up";
-    text(s, 250, 170, 140, 80);
-    clicked1 = false;
-    clicked2 = false;
-    clicked3 = false;
-    clicked4 = false;
-    clicked5 = false;
-    clicked6 = false;
-}
+
 
 function setup() {
 
@@ -45,6 +34,19 @@ function setup() {
 function draw() {
     imageMode(CENTER);
 }
+
+/*function phoneState0() {
+    background(0);
+    image(img, 0, 0);
+    let s = "Welcome! Navigate the phone network to reach the CEO. Don't get caught by security! Dial 0 to hang up";
+    text(s, 250, 170, 140, 80);
+    clicked1 = false;
+    clicked2 = false;
+    clicked3 = false;
+    clicked4 = false;
+    clicked5 = false;
+    clicked6 = false;
+}*/
 
 function phoneState0() {
     background(0);
