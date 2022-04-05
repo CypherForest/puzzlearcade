@@ -5,16 +5,16 @@ let badcounter = 0;
 let goodcounter = 0;
 let playing = true;
 function setup() {
-    let canvas = createCanvas(400, 400);
+    let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
     background(10);
-    for (var i = 0; i < 160; i++) {
+    for (var i = 0; i < 200; i++) {
         stars[i] = new Star();
     }
-    for (var i = 0; i < 40; i++) {
+    for (var i = 0; i < 60; i++) {
         dots[i] = new Dot();
     }
-    for (var k = 0; k < 20; k++) {
+    for (var k = 0; k < 28; k++) {
         baddots[k] = new Baddot();
     }
     
@@ -46,7 +46,8 @@ function draw() {
         background(0);
         fill(255,40,20);
         text('You WIN!', width/2, height/2)
-        text('Hit any key to start over', width/2,300)
+        text('Hit any key to start over', width/2,400)
+        text('Password: infinity system', width/2,440)
         playing = false;
     }
 }
