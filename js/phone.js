@@ -25,9 +25,9 @@ function setup() {
     beep8 = loadSound('js/data/PhoneTones/Phone8.m4a')
     beep9 = loadSound('js/data/PhoneTones/Phone9.m4a')
     background(200);
-fill(255);
+
     text("CLICK HERE TO PROCEED", 230, 20)
-    phoneState0();
+   
 
 }
 
