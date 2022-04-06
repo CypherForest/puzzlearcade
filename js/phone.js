@@ -14,19 +14,19 @@ function setup() {
     let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
     img = loadImage("js/data/businessphone.png");
-    beep0 = loadSound('js/data/PhoneTones/Phone0.m4a')
-    beep1 = loadSound('js/data/PhoneTones/Phone1.m4a')
-    beep2 = loadSound('js/data/PhoneTones/Phone2.m4a')
-    beep3 = loadSound('js/data/PhoneTones/Phone3.m4a')
-    beep4 = loadSound('js/data/PhoneTones/Phone4.m4a')
-    beep5 = loadSound('js/data/PhoneTones/Phone5.m4a')
-    beep6 = loadSound('js/data/PhoneTones/Phone6.m4a')
-    beep7 = loadSound('js/data/PhoneTones/Phone7.m4a')
-    beep8 = loadSound('js/data/PhoneTones/Phone8.m4a')
-    beep9 = loadSound('js/data/PhoneTones/Phone9.m4a')
+    beep0 = loadSound('js/data/PhoneTones/Phone0.m4a');
+    beep1 = loadSound('js/data/PhoneTones/Phone1.m4a');
+    beep2 = loadSound('js/data/PhoneTones/Phone2.m4a');
+    beep3 = loadSound('js/data/PhoneTones/Phone3.m4a');
+    beep4 = loadSound('js/data/PhoneTones/Phone4.m4a');
+    beep5 = loadSound('js/data/PhoneTones/Phone5.m4a');
+    beep6 = loadSound('js/data/PhoneTones/Phone6.m4a');
+    beep7 = loadSound('js/data/PhoneTones/Phone7.m4a');
+    beep8 = loadSound('js/data/PhoneTones/Phone8.m4a');
+    beep9 = loadSound('js/data/PhoneTones/Phone9.m4a');
     background(200);
 
-    text("CLICK HERE TO PROCEED", 230, 20)
+    text("CLICK HERE TO PROCEED", 230, 20);
    
 
 }
@@ -49,7 +49,7 @@ function draw() {
 }*/
 
 function phoneState0() {
-    background(0);
+    background(150);
     image(img, width / 2, height / 2);
     let s = "Welcome! Navigate the phone network to reach the CEO. Don't get caught by security! Dial 0 to hang up";
     text(s, 250, 170, 140, 80);
