@@ -8,7 +8,7 @@ let wrongCounter = 0;
 
 
 function setup() {
-    let canvas = createCanvas(400, 400);
+    let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
    pie = new Pie(200,200); 
     plate = new Plate(200, 50)
