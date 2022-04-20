@@ -11,7 +11,7 @@ let button;
 
 function setup() {
     let canvas = createCanvas(600, 600);
-    canvas.parent('walk');
+    canvas.parent('sketch-container');
     img = loadImage("js/data/loic.png");
     stroke('5');
     background(0,0,100);
