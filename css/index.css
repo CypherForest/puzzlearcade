@@ -152,7 +152,14 @@ a:visited {
  }
 
 
-
+   #solvedmessage{
+      font-size: 36;
+      margin:auto;
+      margin-top: 10px;
+      background-color: aliceblue;
+      text-align: center;
+      width:600px;
+  }
 
 
  #name {
