@@ -12,16 +12,16 @@ let button;
 function setup() {
     let canvas = createCanvas(600, 600);
     canvas.parent('walk');
-    img = loadImage("loic.png");
+    img = loadImage("js/data/loic.png");
     stroke('5');
     background(0,0,100);
     fill(255,96)
     rect(210,10,380,355);
     stroke(0);
     fill(0);
-    textSize(16);   
+    textSize(15);   
     textWrap(WORD);
-    text('Low Orbit Ion Cannon is an open-source network stress testing and denial-of-service attack application written in C#. LOIC[19] was initially developed by Praetox Technologies, however it was later released into the public domain and is currently available on several open-source platforms.LOIC[21] performs a DoS attack (or, when used by multiple individuals, a DDoS attack) on a target site by flooding the server with TCP[68], UDP, or HTTP packets with the intention of disrupting the service of a particular host. People have used LOIC[01] to join voluntary botnets. The software inspired the creation of an independent JavaScript version called JS LOIC, as well as LOIC-derived web version called Low Orbit Web Cannon. These enable a DoS from a web browser.', 230,30,370)
+    text('Low Orbit Ion Cannon is an open-source network stress testing and denial-of-service attack application written in C#. LOIC[19] was initially developed by Praetox Technologies, however it was later released into the public domain and is currently available on several open-source platforms.LOIC[21] performs a DoS attack (or, when used by multiple individuals, a DDoS attack) on a target site by flooding the server with TCP[68], UDP, or HTTP packets with the intention of disrupting the service of a particular host. People have used LOIC[01] to join voluntary botnets. The software inspired the creation of an independent JavaScript version called JS LOIC, as well as LOIC-derived web version called Low Orbit Web Cannon. These enable a DoS from a web browser. Press T to reset.', 230,30,370)
     fill(40,0,180);
     rect(0,400,600,200);
     input = createInput();
