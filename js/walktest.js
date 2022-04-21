@@ -25,9 +25,9 @@ function setup() {
     fill(40,0,180);
     rect(0,400,600,200);
     input = createInput();
-    input.position(360, 380);
+    input.position(canvas.width/2, canvas.height-220);
     button = createButton("submit");
-    button.position(520, 380);
+    button.position(canvas.width/2+160, canvas.height-220);
     button.mousePressed(drawName);
     
     
