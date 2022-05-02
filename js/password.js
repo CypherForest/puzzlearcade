@@ -20,7 +20,7 @@ function preload() {
 
 function setup() {
     let canvas = createCanvas(600, 600);
-    canvas.parent('password');
+    canvas.parent('sketch-container');
     textFont('Helvetica');
     
   //  background(255,0,0);
