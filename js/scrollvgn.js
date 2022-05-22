@@ -4,7 +4,7 @@ let y = 535;
 let img;
 
 function preload() {
-img = loadImage("news.png")
+img = loadImage("js/data/news.png")
 }
 
 function setup(){
