@@ -14,7 +14,7 @@ function preload(){
 
 function setup(){
 let canvas = createCanvas(600,600);
-canvas.parent = ('sketch-container');
+canvas.parent('sketch-container');
 background(0);
 image(hackmo,0,0);
 textSize(26)
