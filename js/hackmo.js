@@ -20,21 +20,21 @@ image(hackmo,0,0);
 textSize(26)
 fill(200,200,20);
 setTimeout(denQ1,1000);
-setTimeout(denQ2,3000);
-setTimeout(denQ3,5000);
-setTimeout(denQ4,7000);
-setTimeout(detQ1,2000);
-setTimeout(detQ2,4000);
-setTimeout(detQ3,6000);
+setTimeout(denQ2,2000);
+setTimeout(denQ3,3000);
+setTimeout(denQ4,4000);
+setTimeout(detQ1,5000);
+setTimeout(detQ2,6000);
+setTimeout(detQ3,7000);
 setTimeout(detQ4,8000);
 setTimeout(reset,10000);
 setTimeout(denQ1,11000);
-setTimeout(denQ2,13000);
-setTimeout(denQ3,15000);
-setTimeout(denQ4,17000);
-setTimeout(detQ1,12000);
-setTimeout(detQ2,14000);
-setTimeout(detQ3,16000);
+setTimeout(denQ2,12000);
+setTimeout(denQ3,13000);
+setTimeout(denQ4,14000);
+setTimeout(detQ1,15000);
+setTimeout(detQ2,16000);
+setTimeout(detQ3,17000);
 setTimeout(detQ4,18000);
 }
 
@@ -71,6 +71,11 @@ text(numbers[5],280,290);
 text(numbers[6],355,290);
     }
     function detQ4() {
+text(numbers[7],430,290);
+
+    }
+
+function denQ5() {
 text(numbers[7],430,290);
 
     }
