@@ -1,4 +1,5 @@
 let counter = 0;
+let badcount = 0;
 let rating = 0;
 let score = 0;
 let size = 10;
@@ -58,10 +59,35 @@ function draw() {
     
     }else if (gamestate==2){
         image(winbackground,0,0);
+       badcount = 0;
 
     } else if (gamestate==3){
         image(losebackground,0,0);
+       badcount = 0;
     }
+   
+   if(badcount == 1){
+       fill(250);
+       ellipse(50,50,50,50);
+       textSize(44);
+       fill(250,0,0);
+    text("X",50,60);
+   } else if (badcount == 2){
+    fill(250);
+    ellipse(50,50,50,50);
+    fill(250,0,0);
+    textSize(44);
+    text("X",50,60);
+    fill(250);
+       ellipse(120,50,50,50);
+       fill(250,0,0);
+       text("X",120,60);
+   } else if(badcount == 3) {
+gamestate = 3;
+counter = 0;
+score = 0;
+badcount = 0;
+   };
    
 
   }
@@ -71,6 +97,8 @@ function keyPressed() {
     if(key===rank[counter]){
         counter += 1;
         score += 1;
+       } else if(key!=rank[counter]) {
+    badcount +=1;
     } else {
         counter += 1;
         score += 0;
@@ -92,6 +120,7 @@ function mousePressed(){
         counter = 0;
         score = 0;
     }
+   badcount = 0;
     counter = 0;
     score = 0;
     size=10;
