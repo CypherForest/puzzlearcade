@@ -1,1 +1,1 @@
-# puzzlegames
+Interactive java based puzzle games created for Cypher Forest, a hacker oriented puzzle contest for participants and attendees of the annual CypherCon https://cyphercon.com/. Tools used include Javascript, CSS, P5.js and Processing libraries.
